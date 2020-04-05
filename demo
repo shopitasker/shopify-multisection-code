@@ -1,0 +1,222 @@
+      <div class="grid">
+
+        {% for block in section.blocks %}
+        <div class="grid-item">
+          {% case block.type %}
+
+            {% when '1' %}
+            {% include '1' %}
+
+            {% when '2' %}
+            {% include '2' %}
+
+            {% when '3' %}
+            {% include '3' %}
+
+            {% when '4' %}
+            {% include '4' %}
+          
+                      {% when '5' %}
+            {% include '5' %}
+
+            {% when '6' %}
+            {% include '6' %}
+
+            {% when '7' %}
+            {% include '7' %}
+
+            {% when '8' %}
+            {% include '8' %}
+          
+                      {% when '9' %}
+            {% include '9' %}
+
+            {% when '10' %}
+            {% include '10' %}
+
+            {% when '11' %}
+            {% include '11' %}
+
+            {% when '12' %}
+            {% include '12' %}
+
+          {% endcase %}
+        </div>
+        {% endfor %}
+      </div>
+
+{% schema %}
+ {
+          "blocks": [
+
+
+
+            {
+              "type": "1",
+              "name": "1",
+              "settings": [
+                  {
+                  "id": "imageOne",
+                  "type": "image_picker",
+                  "label": "Image"
+                }
+              ]
+            },
+            {
+              "type": "2",
+              "name": "2",
+              "settings": [
+                  {
+                  "id": "imageOne",
+                  "type": "image_picker",
+                  "label": "Image"
+                }
+              ]
+            },
+            {
+              "type": "3",
+              "name": "3",
+              "settings": [
+                  {
+                  "id": "imageOne",
+                  "type": "image_picker",
+                  "label": "Image"
+                }
+              ]
+            },
+              { 
+                "type": "4",
+                "name": "4", 
+                "settings": [ 
+                    {
+                  "id": "imageOne",
+                  "type": "image_picker",
+                  "label": "Image"
+                }
+              ]
+            } ,
+
+
+ 
+
+            {
+              "type": "5",
+              "name": "5",
+              "settings": [
+                  {
+                  "id": "imageOne",
+                  "type": "image_picker",
+                  "label": "Image"
+                }
+              ]
+            },
+            {
+              "type": "6",
+              "name": "6",
+              "settings": [
+                  {
+                  "id": "imageOne",
+                  "type": "image_picker",
+                  "label": "Image"
+                }
+              ]
+            },
+            {
+              "type": "7",
+              "name": "7",
+              "settings": [
+                  {
+                  "id": "imageOne",
+                  "type": "image_picker",
+                  "label": "Image"
+                }
+              ]
+            },
+              { 
+                "type": "8",
+                "name": "8", 
+                "settings": [ 
+                    {
+                  "id": "imageOne",
+                  "type": "image_picker",
+                  "label": "Image"
+                }
+              ]
+            } ,
+
+
+
+
+
+
+
+            {
+              "type": "9",
+              "name": "9",
+              "settings": [
+                  {
+                  "id": "imageOne",
+                  "type": "image_picker",
+                  "label": "Image"
+                }
+              ]
+            },
+            {
+              "type": "10",
+              "name": "10",
+              "settings": [
+                  {
+                  "id": "imageOne",
+                  "type": "image_picker",
+                  "label": "Image"
+                }
+              ]
+            },
+            {
+              "type": "11",
+              "name": "11",
+              "settings": [
+                  {
+                  "id": "imageOne",
+                  "type": "image_picker",
+                  "label": "Image"
+                }
+              ]
+            },
+              { 
+                "type": "12",
+                "name": "12", 
+                "settings": [ 
+                    {
+                  "id": "imageOne",
+                  "type": "image_picker",
+                  "label": "Image"
+                }
+              ]
+            } 
+
+
+
+
+
+
+          ]
+        }
+{% endschema %}
+
+{% stylesheet %}
+   .grid {
+        display: flex;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .grid-item {
+        margin-right: 24px;
+      }
+      .grid-item:last-of-type {
+        margin-right: 0px;
+      }
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
